@@ -1,9 +1,9 @@
+<<<<<<< HEAD
 /* Reset e Estilos Globais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
 }
 
 :root {
@@ -983,223 +983,254 @@ section h2::after {
     .header {
         padding: 10px 0;
         background: rgba(26, 11, 46, 0.95);
-        height: 60px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
     }
 
     .logo {
-        font-size: 22px;
-        z-index: 1001;
+        font-size: 24px;
     }
 
     /* Hero Section Mobile */
     .hero {
         height: auto;
         min-height: 100vh;
-        padding: 80px 20px 40px;
+        padding: 120px 0 60px;
     }
 
     .hero h1 {
-        font-size: 28px;
-        padding: 0;
+        font-size: 32px;
+        padding: 0 20px;
         margin-bottom: 15px;
-        line-height: 1.3;
     }
 
     .hero-subtitle {
         font-size: 16px;
-        padding: 0;
+        padding: 0 20px;
         margin-bottom: 25px;
-        line-height: 1.5;
     }
 
     .cta-button {
-        padding: 12px 25px;
+        padding: 12px 30px;
         font-size: 16px;
-        width: auto;
-        display: inline-block;
-        min-width: 200px;
-    }
-
-    /* Navigation Mobile */
-    .nav {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 85%;
-        max-width: 300px;
-        height: 100vh;
-        background: var(--primary-color);
-        padding: 70px 20px 20px;
-        transition: transform 0.3s ease-in-out;
-        z-index: 999;
-        transform: translateX(100%);
-        will-change: transform;
-    }
-
-    .nav.active {
-        transform: translateX(0);
-        right: 0;
-    }
-
-    .nav ul {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .nav a {
-        display: block;
-        padding: 12px 15px;
-        font-size: 16px;
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.1);
-        transition: background 0.3s ease;
-    }
-
-    /* Menu Toggle */
-    .menu-toggle {
-        display: block;
-        width: 25px;
-        height: 20px;
-        position: relative;
-        z-index: 1001;
-        margin-left: auto;
-    }
-
-    .menu-toggle span {
-        height: 2px;
-        margin: 4px 0;
-        transform-origin: center;
-        transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
     /* Sections Mobile */
     section {
-        padding: 40px 0;
+        padding: 60px 0;
     }
 
+    section h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+        padding: 0 20px;
+    }
+
+    /* Benefits Grid Mobile */
     .beneficios-grid {
         grid-template-columns: 1fr;
-        gap: 15px;
-        padding: 0 15px;
+        gap: 20px;
+        padding: 0 20px;
     }
 
     .beneficio-card {
-        padding: 20px;
-        margin-bottom: 15px;
+        padding: 25px;
+        margin: 0;
     }
 
-    /* Results Section Mobile */
-    .resultados-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        padding: 0 15px;
-    }
-
-    .resultado-card {
-        padding: 15px;
-    }
-
-    .resultado-numero {
-        font-size: 32px;
-    }
-
-    /* Contact Form Mobile */
-    .contato-form {
-        padding: 20px;
-        margin: 0 15px;
-    }
-
-    .form-row {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-    /* Footer Mobile */
-    .footer {
-        padding: 20px 15px;
-    }
-
-    .footer-content {
-        gap: 15px;
-    }
-
-    /* WhatsApp Button */
-    .whatsapp-button {
-        width: 45px;
-        height: 45px;
+    .beneficio-card h3 {
         font-size: 22px;
-        bottom: 15px;
-        right: 15px;
-        transform: scale(1);
     }
 
-    /* Performance Improvements */
-    .gradient-bg {
-        opacity: 0.8;
-    }
-
-    .gradients-container {
-        filter: url(#goo) blur(20px);
-    }
-
-    .g1, .g2, .g3, .g4, .g5 {
-        animation-duration: 45s;
-    }
-
-    /* Reduce Motion */
-    @media (prefers-reduced-motion: reduce) {
-        * {
-            animation-duration: 0.01ms !important;
-            animation-iteration-count: 1 !important;
-            transition-duration: 0.01ms !important;
-            scroll-behavior: auto !important;
-        }
-        
-        .gradients-container {
-            display: none;
-        }
+    .beneficio-card p {
+        font-size: 15px;
     }
 
     /* Results Section Mobile */
     .resultados-header {
-        margin-bottom: 30px;
-        padding: 0 15px;
+        padding: 0 20px;
     }
 
     .resultados-header h2 {
-        font-size: 32px;
-        line-height: 1.2;
-        margin-bottom: 15px;
-        text-align: center;
-    }
-
-    .resultados-header .destaque {
-        font-size: 32px;
-        margin-top: 5px;
-        text-align: center;
+        font-size: 36px;
     }
 
     .resultados-header .subtitulo {
         font-size: 16px;
-        margin-top: 15px;
-        text-align: center;
-        padding: 0 10px;
     }
 
-    .tag-destaque {
-        font-size: 12px;
-        padding: 6px 12px;
-        margin-bottom: 15px;
-        display: block;
+    .resultados-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .resultado-card {
+        padding: 25px;
+    }
+
+    .resultado-numero {
+        font-size: 36px;
+    }
+
+    /* Contact Form Mobile */
+    .contato-form {
+        margin: 0 20px;
+        padding: 25px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .submit-button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    /* Footer Mobile */
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
         text-align: center;
-        max-width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
+        gap: 15px;
+        padding: 0 20px;
+    }
+
+    .footer-logo h3 {
+        font-size: 24px;
+    }
+
+    .footer-logo p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .social-links a {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    /* WhatsApp Button Mobile */
+    .whatsapp-button {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* Menu Toggle Button */
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        padding: 80px 20px 20px;
+        transition: all 0.3s ease-in-out;
+        z-index: 1000;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+        transform: translateX(0);
+    }
+
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    .nav.active {
+        right: 0;
+        transform: translateX(0);
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .nav a {
+        display: block;
+        font-size: 18px;
+        padding: 12px 15px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    .nav a:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateX(5px);
+    }
+
+    /* Menu Toggle Animation */
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    /* Overlay */
+    .nav::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: -1;
+    }
+
+    .nav.active::before {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Header adjustments */
+    .header {
+        padding: 15px 0;
+        background: rgba(26, 11, 46, 0.95);
+    }
+
+    .header .container {
+        padding: 0 20px;
     }
 }
 
@@ -1432,4 +1463,285 @@ section h2::after {
     margin: 5px 0;
     transition: all 0.3s ease;
     border-radius: 2px;
-}
+} 
+=======
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelênePrint - Impressão Gráfica de Qualidade</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="gradient-bg">
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
+        <div class="gradients-container">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+            <div class="g4"></div>
+            <div class="g5"></div>
+            <div class="interactive"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">SelênePrint</a>
+            <button class="menu-toggle" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#solucao">Soluções</a></li>
+                    <li><a href="#resultados">Resultados</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Transforme suas ideias em impressões de alta qualidade</h1>
+            <p class="hero-subtitle">Nossa gráfica especializada utiliza tecnologia de ponta para entregar impressões com cores vibrantes, acabamentos premium e prazos rápidos para todos os seus projetos.</p>
+            <a href="#contato" class="cta-button">Solicite um Orçamento</a>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section id="beneficios" class="beneficios">
+        <div class="container">
+            <h2>Por que escolher a SelênePrint?</h2>
+            <div class="beneficios-grid">
+                <div class="beneficio-card">
+                    <h3>Qualidade Superior</h3>
+                    <p>Utilizamos equipamentos de última geração e papéis de alta gramatura para garantir impressões com cores vivas e definição perfeita.</p>
+                </div>
+                <div class="beneficio-card">
+                    <h3>Prazos Rápidos</h3>
+                    <p>Nossa equipe eficiente trabalha com agilidade para entregar seus projetos no prazo, sem comprometer a qualidade.</p>
+                </div>
+                <div class="beneficio-card">
+                    <h3>Acabamentos Especiais</h3>
+                    <p>Oferecemos verniz, laminação, corte especial e outros acabamentos que valorizam seus materiais impressos.</p>
+                </div>
+                <div class="beneficio-card atendimento-card">
+                    <h3>Atendimento Personalizado</h3>
+                    <p>Nossa equipe está sempre pronta para ajudar com sugestões e orientações para o melhor resultado do seu projeto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solução -->
+    <section id="solucao" class="solucao">
+        <div class="container">
+            <h2>Nossas Soluções Gráficas</h2>
+            <div class="solucao-grid">
+                <div class="solucao-card">
+                    <i class="fas fa-print"></i>
+                    <h3>Impressão Digital</h3>
+                    <p>Ideal para tiragens pequenas e médias, com alta qualidade e custo-benefício.</p>
+                </div>
+                <div class="solucao-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Design Gráfico</h3>
+                    <p>Criação de layouts profissionais para seus materiais impressos e digitais.</p>
+                </div>
+                <div class="solucao-card">
+                    <i class="fas fa-id-card"></i>
+                    <h3>Cartões de Visita</h3>
+                    <p>Cartões de visita em diversos papéis e acabamentos para destacar sua marca.</p>
+                </div>
+                <div class="solucao-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Material Promocional</h3>
+                    <p>Panfletos, folders, banners e outros materiais para suas campanhas.</p>
+                </div>
+                <div class="solucao-card">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Estamparia</h3>
+                    <p>Estamparia em camisetas, canecas e outros produtos personalizados.</p>
+                </div>
+                <div class="solucao-card">
+                    <i class="fas fa-box"></i>
+                    <h3>Embalagens</h3>
+                    <p>Caixas, sacolas e embalagens personalizadas para seus produtos.</p>
+                </div>
+                <!-- Duplicação para efeito de loop -->
+                <div class="solucao-card">
+                    <i class="fas fa-print"></i>
+                    <h3>Impressão Digital</h3>
+                    <p>Ideal para tiragens pequenas e médias, com alta qualidade e custo-benefício.</p>
+                </div>
+                <div class="solucao-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Design Gráfico</h3>
+                    <p>Criação de layouts profissionais para seus materiais impressos e digitais.</p>
+                </div>
+                <div class="solucao-card">
+                    <i class="fas fa-id-card"></i>
+                    <h3>Cartões de Visita</h3>
+                    <p>Cartões de visita em diversos papéis e acabamentos para destacar sua marca.</p>
+                </div>
+                <div class="solucao-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Material Promocional</h3>
+                    <p>Panfletos, folders, banners e outros materiais para suas campanhas.</p>
+                </div>
+                <div class="solucao-card">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Estamparia</h3>
+                    <p>Estamparia em camisetas, canecas e outros produtos personalizados.</p>
+                </div>
+                <div class="solucao-card">
+                    <i class="fas fa-box"></i>
+                    <h3>Embalagens</h3>
+                    <p>Caixas, sacolas e embalagens personalizadas para seus produtos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultados -->
+    <section id="resultados" class="resultados">
+        <div class="container">
+            <div class="resultados-header">
+                <span class="tag-destaque">Resultados Comprovados</span>
+                <h2>NOSSO MODELO DE<br>NEGÓCIO É<br><span class="destaque">VALIDADO E<br>RECOMENDADO</span></h2>
+                <p class="subtitulo">Junte-se a milhares de clientes que já transformaram seus projetos com a SelênePrint</p>
+            </div>
+            <div class="resultados-grid">
+                <div class="resultado-card">
+                    <i class="fas fa-users card-icon"></i>
+                    <div class="card-content">
+                        <div class="resultado-numero">3000+</div>
+                        <div class="resultado-titulo">Clientes Satisfeitos</div>
+                    </div>
+                </div>
+                <div class="resultado-card">
+                    <i class="fas fa-globe card-icon"></i>
+                    <div class="card-content">
+                        <div class="resultado-numero">8+</div>
+                        <div class="resultado-titulo">Cidades Atendidas</div>
+                    </div>
+                </div>
+                <div class="resultado-card">
+                    <i class="fas fa-clock card-icon"></i>
+                    <div class="card-content">
+                        <div class="resultado-numero">24h</div>
+                        <div class="resultado-titulo">Prazo de Entrega</div>
+                    </div>
+                </div>
+                <div class="resultado-card">
+                    <i class="fas fa-thumbs-up card-icon"></i>
+                    <div class="card-content">
+                        <div class="resultado-numero">98%</div>
+                        <div class="resultado-titulo">Taxa de Satisfação</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Solicite um Orçamento</h2>
+            <form class="contato-form" id="contatoForm" onsubmit="return enviarWhatsApp();">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="nome" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Seu E-mail" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="empresa" placeholder="Sua Empresa">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="telefone" placeholder="Seu Telefone" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select id="servico" required>
+                        <option value="" disabled selected>Selecione o Serviço</option>
+                        <option value="impressao">Impressão Digital</option>
+                        <option value="design">Design Gráfico</option>
+                        <option value="cartoes">Cartões de Visita</option>
+                        <option value="promocional">Material Promocional</option>
+                        <option value="estamparia">Estamparia</option>
+                        <option value="embalagens">Embalagens</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="mensagem" placeholder="Descreva seu projeto" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar Solicitação</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5534984076063?text=Olá, gostaria de solicitar um orçamento" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>SelênePrint</h3>
+                    <p>Transformando ideias em impressões de qualidade desde 2010</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 SelênePrint. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        function enviarWhatsApp() {
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const empresa = document.getElementById('empresa').value;
+            const telefone = document.getElementById('telefone').value;
+            const servico = document.getElementById('servico').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const texto = `Olá, gostaria de solicitar um orçamento.\nNome: ${nome}\nE-mail: ${email}\nEmpresa: ${empresa}\nTelefone: ${telefone}\nServiço: ${servico}\nMensagem: ${mensagem}`;
+            window.open(`https://wa.me/5534984076063?text=${encodeURIComponent(texto)}`, '_blank');
+            return false;
+        }
+    </script>
+</body>
+</html> 
+>>>>>>> 33cba1fc9fcd8dde3eaf25b49f4751ee3f77cb2a
